@@ -17,15 +17,21 @@
             function rockpaperscissors() {
                 
                 let choice = prompt('Pick rock paper or scissors:', 'rock')
-                let computerchoice = Math.floor(math.Random()* 3 + 1)
+                let computerchoice = Math.floor(Math.random()* 3 + 1)
 
                 if (choice === 'rock') {
 
                     if (computerchoice === 1) {
 
+                        console.log('Computer chose rock, you tie!')
+
                     } else if (computerchoice === 2) {
 
+                        console.log('Computer chose paper, you lose!')
+
                     } else {
+
+                        console.log('Computer chose scissors, you win!')
 
                     }
 
@@ -34,9 +40,15 @@
                                         
                     if (computerchoice === 1) {
 
+                        console.log('Computer chose rock, you win!')
+
                     } else if (computerchoice === 2) {
 
+                        console.log('Computer chose paper you tie!')
+
                     } else {
+
+                        console.log('Computer chose scissors, you lose!')
 
                     }
 
@@ -46,9 +58,15 @@
                                         
                     if (computerchoice === 1) {
 
+                        console.log('Computer chose rock, you lose!')
+
                     } else if (computerchoice === 2) {
 
+                        console.log('Computer chose paper, you win!')
+
                     } else {
+
+                        console.log('Computer chose scissors, you tie!')
 
                     }
 
