@@ -127,16 +127,21 @@
 
             let playerScore = 0;
             let computerScore = 0;
+
             let body = document.querySelector('body');
             let btn = document.querySelectorAll('button');
+
             let rock = document.getElementById('rock');
             let paper = document.getElementById('paper');
             let scissors = document.getElementById('scissors');
+
             let details = document.querySelector('div');
             let gameDescription = document.createElement('p');
             let gameResult = document.createElement('h3')
-            details.appendChild(gameDescription);
+            gameResult.textContent = `Humans: ${playerScore}  vs.  Computers: ${computerScore}`;
             details.appendChild(gameResult);
+            details.appendChild(gameDescription);
+            
 
             rock.addEventListener("click", () => game('rock', computerChoice()));
             paper.addEventListener("click",() => game('paper', computerChoice()));
